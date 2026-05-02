@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lasyāñjali — Three Directions</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Marcellus&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="shared/tokens.css" />
+
+  <style>
+    html, body { margin: 0; padding: 0; background: #ece6dd; height: 100%; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    @keyframes la-fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes la-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    #boot {
+      position: fixed; inset: 0; z-index: 9999;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--cream-50, #fffaf2);
+      transition: opacity 600ms ease;
+    }
+    #boot.hide { opacity: 0; pointer-events: none; }
+    #boot .lotus { animation: la-spin 8s linear infinite; opacity: 0.7; }
+    #boot .label {
+      font-family: 'Marcellus', serif; font-size: 28px; color: #1a1410;
+      margin-top: 16px; text-align: center;
+    }
+    #boot .sub {
+      font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .42em;
+      color: #7a1e1e; margin-top: 8px; text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="boot">
+    <div style="text-align:center">
+      <svg class="lotus" width="80" height="80" viewBox="0 0 64 64" fill="none" stroke="#7a1e1e" stroke-width="1.2">
+        <circle cx="32" cy="32" r="3" fill="#7a1e1e" stroke="none"></circle>
+        <circle cx="32" cy="32" r="9"></circle>
+        <circle cx="32" cy="32" r="18" opacity="0.55"></circle>
+        <circle cx="32" cy="32" r="27" opacity="0.3"></circle>
+      </svg>
+      <div class="label">Lasyāñjali</div>
+      <div class="sub">PREPARING</div>
+    </div>
+  </div>
+
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="shared/primitives.jsx"></script>
+
+  <script type="text/babel" src="directions/brass-plate.jsx"></script>
+  <script type="text/babel" src="directions/bhama-letter.jsx"></script>
+  <script type="text/babel" src="directions/agraharam.jsx"></script>
+
+  <script type="text/babel">
+    function App() {
+      React.useEffect(() => {
+        const t = setTimeout(() => {
+          const b = document.getElementById('boot');
+          if (b) b.classList.add('hide');
+          setTimeout(() => b && b.remove(), 700);
+        }, 600);
+        return () => clearTimeout(t);
+      }, []);
+
+      return (
+        <DesignCanvas
+          title="Lasyāñjali · Three Directions"
+          subtitle="Each artboard is a complete landing page rooted in a different aspect of Kuchipudi. Click ⛶ to focus."
+        >
+          <DCSection
+            id="landing"
+            title="Three Directions, Three Concepts"
+            subtitle="A · the brass plate of the tarangam · B · Satyabhāmā's letter from Bhāmā Kalāpam · C · the agrahāram codex of the form's lineage"
+          >
+            <DCArtboard id="brass-plate" label="A · The Brass Plate" width={1440} height={4400}>
+              <BrassPlateDirection />
+            </DCArtboard>
+            <DCArtboard id="bhama-letter" label="B · Bhāmā's Letter" width={1440} height={4800}>
+              <BhamaLetterDirection />
+            </DCArtboard>
+            <DCArtboard id="agraharam" label="C · Agrahāram Codex" width={1440} height={4600}>
+              <AgraharamDirection />
+            </DCArtboard>
+          </DCSection>
+        </DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* Lasyanjali — shared design tokens */
+
+:root {
+  /* Cream base palette */
+  --cream-50: #fffaf2;
+  --cream-100: #fff5e6;
+  --cream-200: #f7ecd9;
+  --cream-300: #ecdcc1;
+  --cream-400: #d9c39e;
+
+  /* Temple ink */
+  --ink-900: #1a1410;
+  --ink-700: #3a2e26;
+  --ink-500: #6b574a;
+  --ink-400: #8a7868;
+
+  /* Forest green (sacred) */
+  --forest-900: #1a2e22;
+  --forest-700: #2a4a3a;
+  --forest-500: #3f6b54;
+
+  /* Temple red (rakta) */
+  --red-900: #5a1818;
+  --red-700: #7a1e1e;
+  --red-500: #a23a3a;
+  --red-300: #c96a5a;
+
+  /* Ochre / gold (kanaka) */
+  --gold-700: #9a7028;
+  --gold-500: #c89b3c;
+  --gold-300: #e6c067;
+  --gold-100: #f3dca5;
+
+  /* Type */
+  --serif: 'Cormorant Garamond', 'Cormorant', Georgia, serif;
+  --display: 'Marcellus', 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Devanagari/Telugu accent */
+  --indic: 'Tiro Devanagari Sanskrit', 'Cormorant Garamond', serif;
+}
+
+/* Reset within artboards */
+.la * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.la {
+  font-family: var(--sans);
+  color: var(--ink-900);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.la button { background: none; border: none; font: inherit; color: inherit; cursor: pointer; }
+.la a { color: inherit; text-decoration: none; }
+.la img { display: block; max-width: 100%; }
+.la ul, .la ol { list-style: none; }
+
+/* Utility ornaments */
+.la-rule {
+  height: 1px;
+  background: currentColor;
+  opacity: 0.2;
+}
+
+.la-eyebrow {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Placeholder photo: subtly striped, monospace caption */
+.la-placeholder {
+  position: relative;
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(122, 30, 30, 0.06) 0 1px,
+      transparent 1px 14px
+    ),
+    linear-gradient(180deg, var(--cream-200), var(--cream-300));
+  border: 1px solid rgba(26, 20, 16, 0.08);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-500);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.la-placeholder--dark {
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(230, 192, 103, 0.08) 0 1px,
+      transparent 1px 14px
+    ),
+    linear-gradient(180deg, #221915, #14100d);
+  color: var(--gold-300);
+  border-color: rgba(230, 192, 103, 0.18);
+}
+
+.la-placeholder--green {
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 248, 237, 0.08) 0 1px,
+      transparent 1px 14px
+    ),
+    linear-gradient(180deg, #2a4a3a, #1a2e22);
+  color: var(--cream-100);
+  border-color: rgba(230, 192, 103, 0.2);
+}
+
+.la-placeholder__inner {
+  position: absolute;
+  inset: 16px;
+  border: 1px dashed currentColor;
+  opacity: 0.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Scroll-reveal */
+.la-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 900ms cubic-bezier(.2,.7,.2,1), transform 900ms cubic-bezier(.2,.7,.2,1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.la-reveal.is-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide scrollbars within artboard if any internal scroll regions */
+.la-noscroll::-webkit-scrollbar { display: none; }
+.la-noscroll { scrollbar-width: none; }
