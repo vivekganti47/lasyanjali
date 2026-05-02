@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Smt. G. Indumathi — Natya Ratna, Kuchipudi artist, guru and choreographer. Founder of Lasyāñjali Dance Academy, Nacharam, Hyderabad." />
+<title>Smt. G. Indumathi · Lasyāñjali Dance Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cormorant+SC:wght@400;500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Tiro+Devanagari+Sanskrit:ital@0;1&family=Tiro+Telugu:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Veil intro -->
+<div class="veil" id="veil" aria-hidden="true">
+  <div class="veil__mark">
+    <svg viewBox="0 0 220 220" width="220" height="220" aria-hidden="true">
+      <defs>
+        <radialGradient id="lotusGrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#a07b2c" stop-opacity="0.3"/>
+          <stop offset="100%" stop-color="#a07b2c" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <!-- Outer rings expand inward -->
+      <circle cx="110" cy="110" r="106" fill="none" stroke="#a07b2c" stroke-width="0.6" opacity="0.5">
+        <animate attributeName="r" from="60" to="106" dur="1.4s" fill="freeze" />
+        <animate attributeName="opacity" from="0" to="0.5" dur="1.4s" fill="freeze" />
+      </circle>
+      <circle cx="110" cy="110" r="86" fill="none" stroke="#a07b2c" stroke-width="0.4" opacity="0.4">
+        <animate attributeName="r" from="40" to="86" dur="1.6s" begin="0.2s" fill="freeze" />
+        <animate attributeName="opacity" from="0" to="0.4" dur="1.6s" begin="0.2s" fill="freeze" />
+      </circle>
+      <!-- 12-petal lotus -->
+      <g fill="none" stroke="#8a1a1a" stroke-width="0.8" opacity="0">
+        <animate attributeName="opacity" from="0" to="0.8" dur="1.2s" begin="0.6s" fill="freeze" />
+        <g id="petals">
+          <ellipse cx="110" cy="62" rx="9" ry="34" />
+        </g>
+        <use href="#petals" transform="rotate(30 110 110)"/>
+        <use href="#petals" transform="rotate(60 110 110)"/>
+        <use href="#petals" transform="rotate(90 110 110)"/>
+        <use href="#petals" transform="rotate(120 110 110)"/>
+        <use href="#petals" transform="rotate(150 110 110)"/>
+        <use href="#petals" transform="rotate(180 110 110)"/>
+        <use href="#petals" transform="rotate(210 110 110)"/>
+        <use href="#petals" transform="rotate(240 110 110)"/>
+        <use href="#petals" transform="rotate(270 110 110)"/>
+        <use href="#petals" transform="rotate(300 110 110)"/>
+        <use href="#petals" transform="rotate(330 110 110)"/>
+      </g>
+      <!-- Central kumkum dot -->
+      <circle cx="110" cy="110" r="10" fill="#8a1a1a" opacity="0">
+        <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.2s" fill="freeze"/>
+      </circle>
+      <circle cx="110" cy="110" r="40" fill="url(#lotusGrad)" opacity="0">
+        <animate attributeName="opacity" from="0" to="1" dur="1.2s" begin="1s" fill="freeze"/>
+      </circle>
+    </svg>
+    <div class="veil__name">
+      Smt. G. Indumathi
+      <span>· Natya Ratna ·</span>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <a href="#top" class="topbar__mark">
+      <svg class="glyph" viewBox="0 0 36 36" aria-hidden="true">
+        <circle cx="18" cy="18" r="17" fill="none" stroke="#a07b2c" stroke-width="0.5"/>
+        <g fill="none" stroke="#8a1a1a" stroke-width="0.7">
+          <ellipse cx="18" cy="9" rx="2.6" ry="7.2"/>
+          <ellipse cx="18" cy="9" rx="2.6" ry="7.2" transform="rotate(60 18 18)"/>
+          <ellipse cx="18" cy="9" rx="2.6" ry="7.2" transform="rotate(120 18 18)"/>
+          <ellipse cx="18" cy="9" rx="2.6" ry="7.2" transform="rotate(180 18 18)"/>
+          <ellipse cx="18" cy="9" rx="2.6" ry="7.2" transform="rotate(240 18 18)"/>
+          <ellipse cx="18" cy="9" rx="2.6" ry="7.2" transform="rotate(300 18 18)"/>
+        </g>
+        <circle cx="18" cy="18" r="2.4" fill="#8a1a1a"/>
+      </svg>
+      <span>
+        <span class="name">Lasyāñjali</span>
+        <span class="sub">Kuchipudi · est. 1994</span>
+      </span>
+    </a>
+    <nav class="topbar__nav" aria-label="Page sections">
+      <a href="#about">The Artist</a>
+      <a href="#lineage">Lineage</a>
+      <a href="#awards">Honours</a>
+      <a href="#stages">Stages</a>
+      <a href="#academy">Academy</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__photo-frame reveal">
+      <img
+        class="hero__photo"
+        src="assets/indumathi-hero.jpg"
+        alt="Smt. G. Indumathi in full Kuchipudi costume — ivory Kanchipuram silk with multicoloured border, traditional jewellery and stage make-up"
+      />
+      <div class="hero__caption">Smt. G. Indumathi · Lasyāñjali</div>
+    </div>
+    <div class="hero__copy">
+      <div class="hero__eyebrow reveal">Natya Ratna · Kuchipudi</div>
+      <h1 class="hero__name reveal">
+        Smt. G.<br/>
+        <em>Indumathi</em>
+      </h1>
+      <p class="hero__title reveal">
+        Artist · Guru · Choreographer
+        <span class="ratna">Founder · Lasyāñjali Dance Academy</span>
+      </p>
+      <p class="hero__lede reveal">
+        Initiated into Kuchipudi at the age of <em>five</em>, Smt. Indumathi has spent five decades shaping rhythm into prayer — and a generation of dancers in her own image.
+      </p>
+      <dl class="hero__meta reveal">
+        <div>
+          <dt>Performances</dt>
+          <dd>≈&thinsp;500 <small>National &amp; international</small></dd>
+        </div>
+        <div>
+          <dt>Years of Practice</dt>
+          <dd>50<small>Since the age of five</small></dd>
+        </div>
+        <div>
+          <dt>Academy Founded</dt>
+          <dd>1994<small>Nacharam, Hyderabad</small></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Śloka bridge -->
+  <section class="sloka reveal" aria-label="Opening verse">
+    <p class="sloka__verse" lang="sa">
+      यतो हस्तस्ततो दृष्टिः<br/>
+      यतो दृष्टिस्ततो मनः ।<br/>
+      यतो मनस्ततो भावो<br/>
+      यतो भावस्ततो रसः ॥
+    </p>
+    <p class="sloka__trans">
+      Where the hand goes, the eye follows; where the eye, the mind;<br/>
+      where the mind, there feeling arises; and where feeling — rasa is born.
+    </p>
+    <div class="sloka__cite">— Nandikeśvara · Abhinaya Darpaṇam</div>
+  </section>
+
+  <!-- I · The Artist -->
+  <section class="section" id="about">
+    <header class="section__head">
+      <div class="section__num">I · The Artist</div>
+      <div>
+        <h2 class="section__title">A life <em>moulded by rhythm.</em></h2>
+        <p class="section__sub">From the strict discipline of a five-year-old's first lesson to five hundred stages.</p>
+      </div>
+    </header>
+
+    <div class="bio">
+      <div class="bio__prose">
+        <p class="dropcap">
+          <strong>Indumathi Ganti</strong> is an artist, performer and committed teacher of Kuchipudi. From childhood, sheer hard work and a quiet, unwavering passion towards the art moulded her into a wonderful performer.
+        </p>
+        <p>
+          She inherited her artistic talent from her parents — <strong>Sri A. B. Shankara Sastry</strong> and <strong>Smt. Saraswathi</strong>. Her mother, especially, is a diploma holder in Carnatic music with several concerts to her credit, and it was in that household of śloka and svara that the young Indumathi first heard the syllables that would shape her life.
+        </p>
+        <p>
+          The danseuse received her invitation into the Kuchipudi style of dance at a very tender age — when she was only <strong>five years old</strong> — moulded in its strict discipline and austere commitment. She embodies, in exemplary fashion, the style of her legendary guru.
+        </p>
+        <p>
+          Besides being a dancer and performer, Indumathi is a choreographer in her own right. She has introduced new styles in her dances, and she has a god-given gift to understand and analyse <em>rhythm</em>. This versatile dancer has received many awards and honours, given around <strong>five hundred performances</strong> nationally and internationally, and made an immense contribution to the field of classical dance — receiving accolades from many national and international organisations.
+        </p>
+        <p>
+          She has performed at the platforms of <strong>Ravindra Bharati</strong>, <strong>Tyagaraya Gana Sabha</strong>, <strong>Shilparamam</strong>, and all other prestigious platforms in Hyderabad — and on stages in Banaras, Delhi, Bombay, Bhopal, Durgapur, Vizag, the United Kingdom, and beyond.
+        </p>
+      </div>
+      <aside class="bio__aside">
+        <blockquote class="pullquote">
+          "She has a god-given gift to understand and analyse rhythm."
+          <cite>— from her published profile</cite>
+        </blockquote>
+        <dl class="factcard">
+          <div class="factcard__row"><dt>Born to</dt><dd>Sri A. B. Shankara Sastry &amp; Smt. Saraswathi</dd></div>
+          <div class="factcard__row"><dt>Initiated</dt><dd>Age 5, into Kuchipudi</dd></div>
+          <div class="factcard__row"><dt>Education</dt><dd>M.A. (Dance)</dd></div>
+          <div class="factcard__row"><dt>Title</dt><dd>Natya Ratna</dd></div>
+          <div class="factcard__row"><dt>Discipline</dt><dd>Kuchipudi · solo &amp; ballet</dd></div>
+          <div class="factcard__row"><dt>Practice</dt><dd>Performer · choreographer · guru</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- II · Paramparā -->
+  <section class="section" id="lineage">
+    <header class="section__head">
+      <div class="section__num">II · Paramparā</div>
+      <div>
+        <h2 class="section__title">Trained under <em>three masters.</em></h2>
+        <p class="section__sub">A lineage held in trust — and now passed on, undiminished.</p>
+      </div>
+    </header>
+
+    <div class="lineage">
+      <article class="lineage__guru">
+        <div class="lineage__num">I · Mūla Guru</div>
+        <h3 class="lineage__name">Sri Pandit Hemadri<br/>Chidambara Deekshitulu</h3>
+        <div class="lineage__epithet">Natyacharya · Natya Kala Pitamaha</div>
+        <p class="lineage__note">Acclaimed Kuchipudi exponent. Her legendary guru — whose style she embodies in exemplary fashion.</p>
+      </article>
+      <article class="lineage__guru">
+        <div class="lineage__num">II · Advanced Training</div>
+        <h3 class="lineage__name">Sri Bhagavatula<br/>Sethuram</h3>
+        <div class="lineage__epithet">Professor · Potti Sreeramulu Telugu University</div>
+        <p class="lineage__note">A doyen of classical dance, under whom she received advanced training in the Kuchipudi tradition.</p>
+      </article>
+      <article class="lineage__guru">
+        <div class="lineage__num">III · Advanced Training</div>
+        <h3 class="lineage__name">Smt. Bala<br/>Kondala Rao</h3>
+        <div class="lineage__epithet">M.A. in Kuchipudi · Potti Sree Ramulu Telugu University, Hyderabad</div>
+        <p class="lineage__note">Master of Arts in Kuchipudi dance; advanced study and performance training.</p>
+      </article>
+    </div>
+    <div class="lineage__legend">
+      <span>Mūla Guru</span>
+      <span class="arrow">⟶</span>
+      <span>Advanced Training</span>
+      <span class="arrow">⟶</span>
+      <span>Smt. Indumathi</span>
+      <span class="arrow">⟶</span>
+      <span>Lasyāñjali Students</span>
+    </div>
+  </section>
+
+  <!-- III · Honours -->
+  <section class="section" id="awards">
+    <header class="section__head">
+      <div class="section__num">III · Honours</div>
+      <div>
+        <h2 class="section__title">Ten honours, <em>two decades, one art.</em></h2>
+        <p class="section__sub">From a Gold Medal at fourteen to a felicitation by sixty masters at thirty.</p>
+      </div>
+    </header>
+
+    <div class="awards" id="awards-list"></div>
+  </section>
+
+  <!-- IV · Stages -->
+  <section class="section" id="stages">
+    <header class="section__head">
+      <div class="section__num">IV · Stages</div>
+      <div>
+        <h2 class="section__title">Twenty stages <em>across India and abroad.</em></h2>
+        <p class="section__sub">From Doordarshan studios in Ranchi and Hyderabad to a women's day in Bombay and a cultural centre in the United Kingdom.</p>
+      </div>
+    </header>
+
+    <div class="stages">
+      <aside class="stages__map">
+        <h3>Tally</h3>
+        <p class="count">20<em>+</em></p>
+        <p>Documented performances on national and international stages outside Hyderabad — beyond the count of solo recitals at home, which approach five hundred.</p>
+        <p class="tally-label">States &amp; nations</p>
+        <p class="tally-states">Madhya Pradesh · Uttar Pradesh · Bihar · West Bengal · Odisha · Maharashtra · Karnataka · Andhra Pradesh · Telangana · Delhi · United Kingdom</p>
+      </aside>
+      <ol class="stages__list" id="stages-list"></ol>
+    </div>
+  </section>
+
+  <!-- V · Repertoire -->
+  <section class="section" id="rep">
+    <header class="section__head">
+      <div class="section__num">V · Repertoire</div>
+      <div>
+        <h2 class="section__title">Ballets composed, <em>solos performed.</em></h2>
+        <p class="section__sub">A choreographer in her own right, and a custodian of the Kuchipudi mārgam.</p>
+      </div>
+    </header>
+
+    <div class="rep">
+      <div class="rep__col">
+        <h3>Ballets &amp; Productions</h3>
+        <div id="rep-ballets"></div>
+      </div>
+      <div class="rep__col">
+        <h3>Solo Mārgam</h3>
+        <div id="rep-solo"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VI · The School -->
+  <section class="section" id="academy">
+    <header class="section__head">
+      <div class="section__num">VI · The School</div>
+      <div>
+        <h2 class="section__title">A temple of <em>learning Kuchipudi.</em></h2>
+        <p class="section__sub">Established in 1994 — and still teaching, with the same dedication.</p>
+      </div>
+    </header>
+
+    <div class="academy">
+      <div class="academy__copy">
+        <h3>Lasyāñjali Dance Academy</h3>
+        <h2 class="academy__title">Where the younger generation is moulded in <em>undeterred commitment.</em></h2>
+        <p>
+          Smt. Indumathi established her own institute, <strong>Lasyāñjali Dance Academy</strong> — a temple of learning Kuchipudi where students are taught all the dance skills of the tradition after years of undeterred commitment, dedication and determination.
+        </p>
+        <p>
+          She is still teaching the art with the same dedication — the dancing diva indefatigably working towards the preservation and propagation of classical dance in India.
+        </p>
+        <p class="invitation">
+          New students are welcomed with a darśanam at the academy. Please write or call to arrange a visit.
+        </p>
+      </div>
+      <dl class="academy__details">
+        <div class="row">
+          <dt>Studio</dt>
+          <dd>303, A&nbsp;Block, Shanti Gardens<br/>Raghavendra Nagar, Nacharam<br/>Hyderabad, Telangana</dd>
+        </div>
+        <div class="row">
+          <dt>Telephone</dt>
+          <dd><a href="tel:+919014772912">+91 90147 72912</a></dd>
+        </div>
+        <div class="row">
+          <dt>Correspondence</dt>
+          <dd><a href="mailto:gantiindumathi@gmail.com">gantiindumathi@gmail.com</a></dd>
+        </div>
+        <div class="row">
+          <dt>Tradition</dt>
+          <dd>Kuchipudi · in the paramparā of Sri Pandit Hemadri Chidambara Deekshitulu</dd>
+        </div>
+        <div class="row">
+          <dt>Founded</dt>
+          <dd>1994 · by Smt. G. Indumathi</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Colophon -->
+  <footer class="colophon">
+    <div class="colophon__sym" lang="sa" aria-hidden="true">ॐ</div>
+    <p class="colophon__line">
+      May rhythm find feeling, and feeling, rasa.
+    </p>
+    <div class="colophon__sig">Smt. G. Indumathi · Natya Ratna · Hyderabad</div>
+  </footer>
+
+</div><!-- /.page -->
+
+<script src="data.js"></script>
+<script>
+(function () {
+  // Veil dismiss after intro animation completes
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      document.getElementById('veil').classList.add('gone');
+    }, 2600);
+  });
+
+  // Reveal on scroll
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+  // Observe sections and key elements
+  document.querySelectorAll(
+    '.section, .sloka, .academy, .lineage__guru, .stage-item, .award, .rep__item, .factcard, .pullquote'
+  ).forEach(function (el) {
+    el.classList.add('reveal');
+    io.observe(el);
+  });
+  // Hero elements are pre-marked reveal — observe them too
+  document.querySelectorAll('.hero .reveal').forEach(function (el) {
+    io.observe(el);
+  });
+
+  // Render data-driven lists
+  var D = window.INDUMATHI;
+
+  // Awards
+  var awardsHost = document.getElementById('awards-list');
+  D.awards.forEach(function (a, i) {
+    var el = document.createElement('article');
+    el.className = 'award reveal';
+    el.innerHTML =
+      '<div class="award__year">' + a.year + '<small>No. ' + String(i + 1).padStart(2, '0') + '</small></div>' +
+      '<div>' +
+        '<h3 class="award__title">' + a.title + '</h3>' +
+        '<p class="award__body">' + a.body + '</p>' +
+      '</div>';
+    awardsHost.appendChild(el);
+    io.observe(el);
+  });
+
+  // Stages
+  var stagesHost = document.getElementById('stages-list');
+  D.performances.forEach(function (p, i) {
+    var li = document.createElement('li');
+    li.className = 'stage-item reveal';
+    var html = p.includes(' · ')
+      ? p.split(' · ').map(function (part, idx) {
+          return idx === 0 ? part : '<em>· ' + part + '</em>';
+        }).join(' ')
+      : p;
+    li.innerHTML =
+      '<span class="stage-item__n">' + String(i + 1).padStart(2, '0') + '</span>' +
+      '<span class="stage-item__t">' + html + '</span>';
+    stagesHost.appendChild(li);
+    io.observe(li);
+  });
+
+  // Repertoire — ballets
+  var ballHost = document.getElementById('rep-ballets');
+  D.repertoire.ballets.forEach(function (b) {
+    var div = document.createElement('div');
+    div.className = 'rep__item reveal';
+    div.innerHTML = '<div class="n">' + b.name + '</div><div class="d">' + b.note + '</div>';
+    ballHost.appendChild(div);
+    io.observe(div);
+  });
+
+  // Repertoire — solo mārgam
+  var soloHost = document.getElementById('rep-solo');
+  D.repertoire.solo.forEach(function (b) {
+    var div = document.createElement('div');
+    div.className = 'rep__item reveal';
+    div.innerHTML = '<div class="n">' + b.name + '</div><div class="d">' + b.note + '</div>';
+    soloHost.appendChild(div);
+    io.observe(div);
+  });
+}());
+</script>
+
+</body>
+</html>
