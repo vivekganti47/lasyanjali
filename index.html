@@ -18,21 +18,20 @@
     <svg viewBox="0 0 220 220" width="220" height="220" aria-hidden="true">
       <defs>
         <radialGradient id="lotusGrad" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#a07b2c" stop-opacity="0.3"/>
-          <stop offset="100%" stop-color="#a07b2c" stop-opacity="0"/>
+          <stop offset="0%" stop-color="#C09020" stop-opacity="0.28"/>
+          <stop offset="100%" stop-color="#C09020" stop-opacity="0"/>
         </radialGradient>
       </defs>
-      <!-- Outer rings expand inward -->
-      <circle cx="110" cy="110" r="106" fill="none" stroke="#a07b2c" stroke-width="0.6" opacity="0.5">
+      <circle cx="110" cy="110" r="106" fill="none" stroke="#C09020" stroke-width="0.6" opacity="0.5">
         <animate attributeName="r" from="60" to="106" dur="1.4s" fill="freeze" />
         <animate attributeName="opacity" from="0" to="0.5" dur="1.4s" fill="freeze" />
       </circle>
-      <circle cx="110" cy="110" r="86" fill="none" stroke="#a07b2c" stroke-width="0.4" opacity="0.4">
+      <circle cx="110" cy="110" r="86" fill="none" stroke="#C09020" stroke-width="0.4" opacity="0.4">
         <animate attributeName="r" from="40" to="86" dur="1.6s" begin="0.2s" fill="freeze" />
         <animate attributeName="opacity" from="0" to="0.4" dur="1.6s" begin="0.2s" fill="freeze" />
       </circle>
       <!-- 12-petal lotus -->
-      <g fill="none" stroke="#8a1a1a" stroke-width="0.8" opacity="0">
+      <g fill="none" stroke="#8B1512" stroke-width="0.8" opacity="0">
         <animate attributeName="opacity" from="0" to="0.8" dur="1.2s" begin="0.6s" fill="freeze" />
         <g id="petals">
           <ellipse cx="110" cy="62" rx="9" ry="34" />
@@ -50,7 +49,7 @@
         <use href="#petals" transform="rotate(330 110 110)"/>
       </g>
       <!-- Central kumkum dot -->
-      <circle cx="110" cy="110" r="10" fill="#8a1a1a" opacity="0">
+      <circle cx="110" cy="110" r="10" fill="#8B1512" opacity="0">
         <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.2s" fill="freeze"/>
       </circle>
       <circle cx="110" cy="110" r="40" fill="url(#lotusGrad)" opacity="0">
@@ -70,8 +69,8 @@
   <header class="topbar">
     <a href="#top" class="topbar__mark">
       <svg class="glyph" viewBox="0 0 36 36" aria-hidden="true">
-        <circle cx="18" cy="18" r="17" fill="none" stroke="#a07b2c" stroke-width="0.5"/>
-        <g fill="none" stroke="#8a1a1a" stroke-width="0.7">
+        <circle cx="18" cy="18" r="17" fill="none" stroke="#C09020" stroke-width="0.5"/>
+        <g fill="none" stroke="#8B1512" stroke-width="0.7">
           <ellipse cx="18" cy="9" rx="2.6" ry="7.2"/>
           <ellipse cx="18" cy="9" rx="2.6" ry="7.2" transform="rotate(60 18 18)"/>
           <ellipse cx="18" cy="9" rx="2.6" ry="7.2" transform="rotate(120 18 18)"/>
@@ -79,7 +78,7 @@
           <ellipse cx="18" cy="9" rx="2.6" ry="7.2" transform="rotate(240 18 18)"/>
           <ellipse cx="18" cy="9" rx="2.6" ry="7.2" transform="rotate(300 18 18)"/>
         </g>
-        <circle cx="18" cy="18" r="2.4" fill="#8a1a1a"/>
+        <circle cx="18" cy="18" r="2.4" fill="#8B1512"/>
       </svg>
       <span>
         <span class="name">Lasyāñjali</span>
@@ -92,48 +91,116 @@
       <a href="#awards">Honours</a>
       <a href="#stages">Stages</a>
       <a href="#academy">Academy</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero" id="top">
-    <div class="hero__photo-frame reveal">
-      <img
-        class="hero__photo"
-        src="assets/indumathi-hero.jpg"
-        alt="Smt. G. Indumathi in full Kuchipudi costume — ivory Kanchipuram silk with multicoloured border, traditional jewellery and stage make-up"
-      />
-      <div class="hero__caption">Smt. G. Indumathi · Lasyāñjali</div>
+    <div class="hero__main">
+      <div class="hero__photo-frame reveal">
+        <img
+          class="hero__photo"
+          src="assets/indumathi-hero.jpg"
+          alt="Smt. G. Indumathi in full Kuchipudi costume in ivory Kanchipuram silk with multicoloured border, traditional jewellery and stage make-up"
+        />
+        <div class="hero__caption">Smt. G. Indumathi · Lasyāñjali</div>
+      </div>
+      <div class="hero__copy">
+        <div class="hero__eyebrow reveal">Natya Ratna · Kuchipudi</div>
+        <h1 class="hero__name reveal">
+          Smt. G.<br/>
+          <em>Indumathi</em>
+        </h1>
+        <span class="hero__name-accent reveal"></span>
+        <p class="hero__title reveal">
+          Artist · Guru · Choreographer
+          <span class="ratna">Founder · Lasyāñjali Dance Academy</span>
+        </p>
+        <p class="hero__lede reveal">
+          Initiated into Kuchipudi at the age of <em>five</em>, Smt. Indumathi has spent five decades in service of this art, forming generations of dancers in the tradition she received.
+        </p>
+        <dl class="hero__meta reveal">
+          <div>
+            <dt>Performances</dt>
+            <dd>≈&thinsp;500 <small>National &amp; international</small></dd>
+          </div>
+          <div>
+            <dt>Years of Practice</dt>
+            <dd>50<small>Since the age of five</small></dd>
+          </div>
+          <div>
+            <dt>Academy Founded</dt>
+            <dd>1994<small>Nacharam, Hyderabad</small></dd>
+          </div>
+        </dl>
+      </div>
     </div>
-    <div class="hero__copy">
-      <div class="hero__eyebrow reveal">Natya Ratna · Kuchipudi</div>
-      <h1 class="hero__name reveal">
-        Smt. G.<br/>
-        <em>Indumathi</em>
-      </h1>
-      <p class="hero__title reveal">
-        Artist · Guru · Choreographer
-        <span class="ratna">Founder · Lasyāñjali Dance Academy</span>
-      </p>
-      <p class="hero__lede reveal">
-        Initiated into Kuchipudi at the age of <em>five</em>, Smt. Indumathi has spent five decades shaping rhythm into prayer — and a generation of dancers in her own image.
-      </p>
-      <dl class="hero__meta reveal">
-        <div>
-          <dt>Performances</dt>
-          <dd>≈&thinsp;500 <small>National &amp; international</small></dd>
+
+    <!-- Hero photo gallery strip -->
+    <div class="gallery-section reveal">
+      <div class="gallery-header">
+        <span class="gallery-label">From the Stage</span>
+        <div class="gallery-nav">
+          <button class="gallery-nav__btn" data-strip="hero-strip" data-dir="-1" aria-label="Previous">&#8592;</button>
+          <button class="gallery-nav__btn" data-strip="hero-strip" data-dir="1" aria-label="Next">&#8594;</button>
         </div>
-        <div>
-          <dt>Years of Practice</dt>
-          <dd>50<small>Since the age of five</small></dd>
+      </div>
+      <div class="gallery-strip" id="hero-strip">
+        <div class="gallery-frame gallery-frame--wide">
+          <div class="gallery-placeholder">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg>
+            <span>Add Photo</span>
+          </div>
         </div>
-        <div>
-          <dt>Academy Founded</dt>
-          <dd>1994<small>Nacharam, Hyderabad</small></dd>
+        <div class="gallery-frame gallery-frame--wide">
+          <div class="gallery-placeholder">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg>
+            <span>Add Photo</span>
+          </div>
         </div>
-      </dl>
+        <div class="gallery-frame gallery-frame--wide">
+          <div class="gallery-placeholder">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg>
+            <span>Add Photo</span>
+          </div>
+        </div>
+        <div class="gallery-frame gallery-frame--wide">
+          <div class="gallery-placeholder">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg>
+            <span>Add Photo</span>
+          </div>
+        </div>
+        <div class="gallery-frame gallery-frame--wide">
+          <div class="gallery-placeholder">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg>
+            <span>Add Photo</span>
+          </div>
+        </div>
+        <div class="gallery-frame gallery-frame--wide">
+          <div class="gallery-placeholder">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg>
+            <span>Add Photo</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- Peacock ornament -->
+  <div class="ornament" aria-hidden="true">
+    <svg viewBox="0 0 360 44" height="44" aria-hidden="true">
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#C09020" stroke-width="0.5" opacity="0.45"/>
+      <line x1="56" y1="22" x2="56" y2="15" stroke="#C09020" stroke-width="0.5" opacity="0.4"/>
+      <line x1="96" y1="22" x2="96" y2="15" stroke="#C09020" stroke-width="0.5" opacity="0.4"/>
+      <ellipse cx="180" cy="22" rx="28" ry="13" fill="none" stroke="#0C4C3A" stroke-width="1"/>
+      <ellipse cx="180" cy="22" rx="16" ry="7.5" fill="none" stroke="#C09020" stroke-width="0.8"/>
+      <circle cx="180" cy="22" r="5" fill="#0C4C3A"/>
+      <line x1="220" y1="22" x2="360" y2="22" stroke="#C09020" stroke-width="0.5" opacity="0.45"/>
+      <line x1="264" y1="22" x2="264" y2="15" stroke="#C09020" stroke-width="0.5" opacity="0.4"/>
+      <line x1="304" y1="22" x2="304" y2="15" stroke="#C09020" stroke-width="0.5" opacity="0.4"/>
+    </svg>
+  </div>
 
   <!-- Śloka bridge -->
   <section class="sloka reveal" aria-label="Opening verse">
@@ -145,9 +212,9 @@
     </p>
     <p class="sloka__trans">
       Where the hand goes, the eye follows; where the eye, the mind;<br/>
-      where the mind, there feeling arises; and where feeling — rasa is born.
+      where the mind, there feeling arises; and where feeling, rasa is born.
     </p>
-    <div class="sloka__cite">— Nandikeśvara · Abhinaya Darpaṇam</div>
+    <div class="sloka__cite">Nandikeśvara · Abhinaya Darpaṇam</div>
   </section>
 
   <!-- I · The Artist -->
@@ -156,7 +223,7 @@
       <div class="section__num">I · The Artist</div>
       <div>
         <h2 class="section__title">A life <em>moulded by rhythm.</em></h2>
-        <p class="section__sub">From the strict discipline of a five-year-old's first lesson to five hundred stages.</p>
+        <p class="section__sub">From a five-year-old's first lesson to five hundred stages.</p>
       </div>
     </header>
 
@@ -166,22 +233,22 @@
           <strong>Indumathi Ganti</strong> is an artist, performer and committed teacher of Kuchipudi. From childhood, sheer hard work and a quiet, unwavering passion towards the art moulded her into a wonderful performer.
         </p>
         <p>
-          She inherited her artistic talent from her parents — <strong>Sri A. B. Shankara Sastry</strong> and <strong>Smt. Saraswathi</strong>. Her mother, especially, is a diploma holder in Carnatic music with several concerts to her credit, and it was in that household of śloka and svara that the young Indumathi first heard the syllables that would shape her life.
+          She inherited her artistic talent from her parents: <strong>Sri A. B. Shankara Sastry</strong> and <strong>Smt. Saraswathi</strong>. Her mother, especially, is a diploma holder in Carnatic music with several concerts to her credit, and it was in that household of śloka and svara that the young Indumathi first heard the syllables that would shape her life.
         </p>
         <p>
-          The danseuse received her invitation into the Kuchipudi style of dance at a very tender age — when she was only <strong>five years old</strong> — moulded in its strict discipline and austere commitment. She embodies, in exemplary fashion, the style of her legendary guru.
+          The danseuse received her invitation into the Kuchipudi style of dance at a very tender age, when she was only <strong>five years old</strong>, moulded in its strict discipline and austere commitment. She embodies, in exemplary fashion, the style of her legendary guru.
         </p>
         <p>
-          Besides being a dancer and performer, Indumathi is a choreographer in her own right. She has introduced new styles in her dances, and she has a god-given gift to understand and analyse <em>rhythm</em>. This versatile dancer has received many awards and honours, given around <strong>five hundred performances</strong> nationally and internationally, and made an immense contribution to the field of classical dance — receiving accolades from many national and international organisations.
+          Besides being a dancer and performer, Indumathi is a choreographer in her own right. She has introduced new styles in her dances, and she has a god-given gift to understand and analyse <em>rhythm</em>. This versatile dancer has received many awards and honours, given around <strong>five hundred performances</strong> nationally and internationally, and made an immense contribution to the field of classical dance, receiving accolades from many national and international organisations.
         </p>
         <p>
-          She has performed at the platforms of <strong>Ravindra Bharati</strong>, <strong>Tyagaraya Gana Sabha</strong>, <strong>Shilparamam</strong>, and all other prestigious platforms in Hyderabad — and on stages in Banaras, Delhi, Bombay, Bhopal, Durgapur, Vizag, the United Kingdom, and beyond.
+          She has performed at the platforms of <strong>Ravindra Bharati</strong>, <strong>Tyagaraya Gana Sabha</strong>, <strong>Shilparamam</strong>, and all other prestigious platforms in Hyderabad, and on stages in Banaras, Delhi, Bombay, Bhopal, Durgapur, Vizag, the United Kingdom, and beyond.
         </p>
       </div>
       <aside class="bio__aside">
         <blockquote class="pullquote">
           "She has a god-given gift to understand and analyse rhythm."
-          <cite>— from her published profile</cite>
+          <cite>from her published profile</cite>
         </blockquote>
         <dl class="factcard">
           <div class="factcard__row"><dt>Born to</dt><dd>Sri A. B. Shankara Sastry &amp; Smt. Saraswathi</dd></div>
@@ -193,6 +260,25 @@
         </dl>
       </aside>
     </div>
+
+    <!-- Artist gallery -->
+    <div class="gallery-section reveal">
+      <div class="gallery-header">
+        <span class="gallery-label">Moments</span>
+        <div class="gallery-nav">
+          <button class="gallery-nav__btn" data-strip="artist-strip" data-dir="-1" aria-label="Previous">&#8592;</button>
+          <button class="gallery-nav__btn" data-strip="artist-strip" data-dir="1" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+      <div class="gallery-strip" id="artist-strip">
+        <div class="gallery-frame gallery-frame--tall"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--tall"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--tall"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--tall"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--tall"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--tall"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+      </div>
+    </div>
   </section>
 
   <!-- II · Paramparā -->
@@ -201,24 +287,42 @@
       <div class="section__num">II · Paramparā</div>
       <div>
         <h2 class="section__title">Trained under <em>three masters.</em></h2>
-        <p class="section__sub">A lineage held in trust — and now passed on, undiminished.</p>
+        <p class="section__sub">A lineage held in trust, and now passed on, undiminished.</p>
       </div>
     </header>
 
     <div class="lineage">
       <article class="lineage__guru">
+        <div class="portrait-slot">
+          <div class="gallery-placeholder">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg>
+            <span>Add Portrait</span>
+          </div>
+        </div>
         <div class="lineage__num">I · Mūla Guru</div>
         <h3 class="lineage__name">Sri Pandit Hemadri<br/>Chidambara Deekshitulu</h3>
         <div class="lineage__epithet">Natyacharya · Natya Kala Pitamaha</div>
-        <p class="lineage__note">Acclaimed Kuchipudi exponent. Her legendary guru — whose style she embodies in exemplary fashion.</p>
+        <p class="lineage__note">Acclaimed Kuchipudi exponent. Her legendary guru, whose style she embodies in exemplary fashion.</p>
       </article>
       <article class="lineage__guru">
+        <div class="portrait-slot">
+          <div class="gallery-placeholder">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg>
+            <span>Add Portrait</span>
+          </div>
+        </div>
         <div class="lineage__num">II · Advanced Training</div>
         <h3 class="lineage__name">Sri Bhagavatula<br/>Sethuram</h3>
         <div class="lineage__epithet">Professor · Potti Sreeramulu Telugu University</div>
         <p class="lineage__note">A doyen of classical dance, under whom she received advanced training in the Kuchipudi tradition.</p>
       </article>
       <article class="lineage__guru">
+        <div class="portrait-slot">
+          <div class="gallery-placeholder">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg>
+            <span>Add Portrait</span>
+          </div>
+        </div>
         <div class="lineage__num">III · Advanced Training</div>
         <h3 class="lineage__name">Smt. Bala<br/>Kondala Rao</h3>
         <div class="lineage__epithet">M.A. in Kuchipudi · Potti Sree Ramulu Telugu University, Hyderabad</div>
@@ -227,11 +331,11 @@
     </div>
     <div class="lineage__legend">
       <span>Mūla Guru</span>
-      <span class="arrow">⟶</span>
+      <span class="arrow">&#10230;</span>
       <span>Advanced Training</span>
-      <span class="arrow">⟶</span>
+      <span class="arrow">&#10230;</span>
       <span>Smt. Indumathi</span>
-      <span class="arrow">⟶</span>
+      <span class="arrow">&#10230;</span>
       <span>Lasyāñjali Students</span>
     </div>
   </section>
@@ -247,6 +351,24 @@
     </header>
 
     <div class="awards" id="awards-list"></div>
+
+    <!-- Honours gallery -->
+    <div class="gallery-section reveal">
+      <div class="gallery-header">
+        <span class="gallery-label">Felicitations</span>
+        <div class="gallery-nav">
+          <button class="gallery-nav__btn" data-strip="honours-strip" data-dir="-1" aria-label="Previous">&#8592;</button>
+          <button class="gallery-nav__btn" data-strip="honours-strip" data-dir="1" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+      <div class="gallery-strip" id="honours-strip">
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+      </div>
+    </div>
   </section>
 
   <!-- IV · Stages -->
@@ -255,15 +377,34 @@
       <div class="section__num">IV · Stages</div>
       <div>
         <h2 class="section__title">Twenty stages <em>across India and abroad.</em></h2>
-        <p class="section__sub">From Doordarshan studios in Ranchi and Hyderabad to a women's day in Bombay and a cultural centre in the United Kingdom.</p>
+        <p class="section__sub">From Doordarshan studios in Ranchi and Hyderabad to a cultural centre in the United Kingdom.</p>
       </div>
     </header>
+
+    <!-- Stages gallery carousel -->
+    <div class="gallery-section reveal">
+      <div class="gallery-header">
+        <span class="gallery-label">On Stage</span>
+        <div class="gallery-nav">
+          <button class="gallery-nav__btn" data-strip="stages-strip" data-dir="-1" aria-label="Previous">&#8592;</button>
+          <button class="gallery-nav__btn" data-strip="stages-strip" data-dir="1" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+      <div class="gallery-strip" id="stages-strip">
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+      </div>
+    </div>
 
     <div class="stages">
       <aside class="stages__map">
         <h3>Tally</h3>
         <p class="count">20<em>+</em></p>
-        <p>Documented performances on national and international stages outside Hyderabad — beyond the count of solo recitals at home, which approach five hundred.</p>
+        <p>Documented performances on national and international stages outside Hyderabad, beyond the count of solo recitals at home, which approach five hundred.</p>
         <p class="tally-label">States &amp; nations</p>
         <p class="tally-states">Madhya Pradesh · Uttar Pradesh · Bihar · West Bengal · Odisha · Maharashtra · Karnataka · Andhra Pradesh · Telangana · Delhi · United Kingdom</p>
       </aside>
@@ -281,6 +422,24 @@
       </div>
     </header>
 
+    <!-- Repertoire gallery -->
+    <div class="gallery-section reveal">
+      <div class="gallery-header">
+        <span class="gallery-label">Productions</span>
+        <div class="gallery-nav">
+          <button class="gallery-nav__btn" data-strip="rep-strip" data-dir="-1" aria-label="Previous">&#8592;</button>
+          <button class="gallery-nav__btn" data-strip="rep-strip" data-dir="1" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+      <div class="gallery-strip" id="rep-strip">
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+        <div class="gallery-frame gallery-frame--wide"><div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div></div>
+      </div>
+    </div>
+
     <div class="rep">
       <div class="rep__col">
         <h3>Ballets &amp; Productions</h3>
@@ -293,52 +452,236 @@
     </div>
   </section>
 
+  <!-- Peacock ornament -->
+  <div class="ornament" aria-hidden="true">
+    <svg viewBox="0 0 360 44" height="44" aria-hidden="true">
+      <line x1="0" y1="22" x2="140" y2="22" stroke="#C09020" stroke-width="0.5" opacity="0.45"/>
+      <line x1="56" y1="22" x2="56" y2="15" stroke="#C09020" stroke-width="0.5" opacity="0.4"/>
+      <line x1="96" y1="22" x2="96" y2="15" stroke="#C09020" stroke-width="0.5" opacity="0.4"/>
+      <ellipse cx="180" cy="22" rx="28" ry="13" fill="none" stroke="#0C4C3A" stroke-width="1"/>
+      <ellipse cx="180" cy="22" rx="16" ry="7.5" fill="none" stroke="#C09020" stroke-width="0.8"/>
+      <circle cx="180" cy="22" r="5" fill="#0C4C3A"/>
+      <line x1="220" y1="22" x2="360" y2="22" stroke="#C09020" stroke-width="0.5" opacity="0.45"/>
+      <line x1="264" y1="22" x2="264" y2="15" stroke="#C09020" stroke-width="0.5" opacity="0.4"/>
+      <line x1="304" y1="22" x2="304" y2="15" stroke="#C09020" stroke-width="0.5" opacity="0.4"/>
+    </svg>
+  </div>
+
   <!-- VI · The School -->
   <section class="section" id="academy">
     <header class="section__head">
       <div class="section__num">VI · The School</div>
       <div>
-        <h2 class="section__title">A temple of <em>learning Kuchipudi.</em></h2>
-        <p class="section__sub">Established in 1994 — and still teaching, with the same dedication.</p>
+        <h2 class="section__title">Where the tradition <em>lives on.</em></h2>
+        <p class="section__sub">Established in 1994, still teaching with the same commitment to paramparā.</p>
       </div>
     </header>
 
-    <div class="academy">
-      <div class="academy__copy">
-        <h3>Lasyāñjali Dance Academy</h3>
-        <h2 class="academy__title">Where the younger generation is moulded in <em>undeterred commitment.</em></h2>
-        <p>
-          Smt. Indumathi established her own institute, <strong>Lasyāñjali Dance Academy</strong> — a temple of learning Kuchipudi where students are taught all the dance skills of the tradition after years of undeterred commitment, dedication and determination.
-        </p>
-        <p>
-          She is still teaching the art with the same dedication — the dancing diva indefatigably working towards the preservation and propagation of classical dance in India.
-        </p>
-        <p class="invitation">
-          New students are welcomed with a darśanam at the academy. Please write or call to arrange a visit.
-        </p>
+    <p class="academy-intro">
+      Smt. Indumathi established Lasyāñjali Dance Academy in 1994, a place where students are taught all the dance skills of the tradition through years of commitment, dedication and determination. She continues to teach and perform, wholly committed to preserving the Kuchipudi tradition.
+    </p>
+
+    <!-- Part One: On the World Stage -->
+    <div class="academy-part reveal">
+      <div class="academy-part__header">
+        <div class="academy-part__label">Part One</div>
+        <h3 class="academy-part__title">On the World Stage</h3>
+        <p class="academy-part__desc">Her students have carried Kuchipudi to stages across India and abroad, continuing the lineage that Smt. Indumathi herself received from her masters.</p>
       </div>
-      <dl class="academy__details">
-        <div class="row">
-          <dt>Studio</dt>
-          <dd>303, A&nbsp;Block, Shanti Gardens<br/>Raghavendra Nagar, Nacharam<br/>Hyderabad, Telangana</dd>
+      <div class="perf-grid">
+        <article class="perf-card reveal">
+          <div class="perf-card__photo">
+            <div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div>
+          </div>
+          <div class="perf-card__type intl">International</div>
+          <div class="perf-card__venue">[Venue Name]</div>
+          <div class="perf-card__loc">[City, Country]</div>
+          <p class="perf-card__note placeholder-note">[Placeholder — add performance details, year and description here]</p>
+        </article>
+        <article class="perf-card reveal">
+          <div class="perf-card__photo">
+            <div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div>
+          </div>
+          <div class="perf-card__type intl">International</div>
+          <div class="perf-card__venue">[Venue Name]</div>
+          <div class="perf-card__loc">[City, Country]</div>
+          <p class="perf-card__note placeholder-note">[Placeholder — add performance details, year and description here]</p>
+        </article>
+        <article class="perf-card reveal">
+          <div class="perf-card__photo">
+            <div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div>
+          </div>
+          <div class="perf-card__type">National</div>
+          <div class="perf-card__venue">[Venue Name]</div>
+          <div class="perf-card__loc">[City, India]</div>
+          <p class="perf-card__note placeholder-note">[Placeholder — add performance details, year and description here]</p>
+        </article>
+        <article class="perf-card reveal">
+          <div class="perf-card__photo">
+            <div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Photo</span></div>
+          </div>
+          <div class="perf-card__type">National</div>
+          <div class="perf-card__venue">[Venue Name]</div>
+          <div class="perf-card__loc">[City, India]</div>
+          <p class="perf-card__note placeholder-note">[Placeholder — add performance details, year and description here]</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="ornament" aria-hidden="true" style="margin: 56px 0;">
+      <svg viewBox="0 0 360 44" height="44" aria-hidden="true">
+        <line x1="0" y1="22" x2="140" y2="22" stroke="#C09020" stroke-width="0.5" opacity="0.45"/>
+        <line x1="56" y1="22" x2="56" y2="15" stroke="#C09020" stroke-width="0.5" opacity="0.4"/>
+        <line x1="96" y1="22" x2="96" y2="15" stroke="#C09020" stroke-width="0.5" opacity="0.4"/>
+        <ellipse cx="180" cy="22" rx="28" ry="13" fill="none" stroke="#0C4C3A" stroke-width="1"/>
+        <ellipse cx="180" cy="22" rx="16" ry="7.5" fill="none" stroke="#C09020" stroke-width="0.8"/>
+        <circle cx="180" cy="22" r="5" fill="#0C4C3A"/>
+        <line x1="220" y1="22" x2="360" y2="22" stroke="#C09020" stroke-width="0.5" opacity="0.45"/>
+        <line x1="264" y1="22" x2="264" y2="15" stroke="#C09020" stroke-width="0.5" opacity="0.4"/>
+        <line x1="304" y1="22" x2="304" y2="15" stroke="#C09020" stroke-width="0.5" opacity="0.4"/>
+      </svg>
+    </div>
+
+    <!-- Part Two: The Academy Network -->
+    <div class="academy-part reveal">
+      <div class="academy-part__header">
+        <div class="academy-part__label">Part Two</div>
+        <h3 class="academy-part__title">The Academy</h3>
+        <p class="academy-part__desc">Find a Lasyāñjali centre near you. Each branch carries the same tradition, the same care.</p>
+      </div>
+      <div class="branch-grid">
+
+        <!-- Main centre: Nacharam (real data) -->
+        <div class="branch-card branch-card--primary reveal">
+          <div class="branch-card__photo">
+            <div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Studio Photo</span></div>
+          </div>
+          <div class="branch-card__badge">Main Centre</div>
+          <h4 class="branch-card__name">Nacharam, Hyderabad</h4>
+          <dl class="branch-card__details">
+            <div>
+              <dt>Address</dt>
+              <dd>303, A&nbsp;Block, Shanti Gardens<br/>Raghavendra Nagar, Nacharam<br/>Hyderabad, Telangana</dd>
+            </div>
+            <div>
+              <dt>Telephone</dt>
+              <dd><a href="tel:+919014772912">+91 90147 72912</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:gantiindumathi@gmail.com">gantiindumathi@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Tradition</dt>
+              <dd>Kuchipudi · paramparā of Sri Pandit Hemadri Chidambara Deekshitulu</dd>
+            </div>
+            <div>
+              <dt>Timings</dt>
+              <dd class="placeholder-dd">[Placeholder — add class days and hours]</dd>
+            </div>
+          </dl>
         </div>
-        <div class="row">
-          <dt>Telephone</dt>
+
+        <!-- Placeholder branch 2 -->
+        <div class="branch-card reveal">
+          <div class="branch-card__photo">
+            <div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Studio Photo</span></div>
+          </div>
+          <div class="branch-card__badge placeholder-badge">[Branch Name]</div>
+          <h4 class="branch-card__name">[Location Name]</h4>
+          <dl class="branch-card__details">
+            <div>
+              <dt>Address</dt>
+              <dd class="placeholder-dd">[Placeholder — add full address]</dd>
+            </div>
+            <div>
+              <dt>Timings</dt>
+              <dd class="placeholder-dd">[Placeholder — add class days and hours]</dd>
+            </div>
+            <div>
+              <dt>Contact</dt>
+              <dd class="placeholder-dd">[Placeholder — add phone or email]</dd>
+            </div>
+            <div>
+              <dt>How to reach</dt>
+              <dd class="placeholder-dd">[Placeholder — add landmark or directions]</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Placeholder branch 3 -->
+        <div class="branch-card reveal">
+          <div class="branch-card__photo">
+            <div class="gallery-placeholder"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg><span>Add Studio Photo</span></div>
+          </div>
+          <div class="branch-card__badge placeholder-badge">[Branch Name]</div>
+          <h4 class="branch-card__name">[Location Name]</h4>
+          <dl class="branch-card__details">
+            <div>
+              <dt>Address</dt>
+              <dd class="placeholder-dd">[Placeholder — add full address]</dd>
+            </div>
+            <div>
+              <dt>Timings</dt>
+              <dd class="placeholder-dd">[Placeholder — add class days and hours]</dd>
+            </div>
+            <div>
+              <dt>Contact</dt>
+              <dd class="placeholder-dd">[Placeholder — add phone or email]</dd>
+            </div>
+            <div>
+              <dt>How to reach</dt>
+              <dd class="placeholder-dd">[Placeholder — add landmark or directions]</dd>
+            </div>
+          </dl>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VII · Begin Your Journey -->
+  <section class="section contact-section" id="contact">
+    <!-- Background photo placeholder -->
+    <div class="contact-bg-photo" aria-hidden="true">
+      <div class="gallery-placeholder" style="background: transparent;">
+        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="rgba(244,237,216,0.3)" stroke-width="1" stroke-linecap="round"><path d="M1 6C1 5.4 1.4 5 2 5H6L8 2H16L18 5H22C22.6 5 23 5.4 23 6V18C23 18.6 22.6 19 22 19H2C1.4 19 1 18.6 1 18V6Z"/><circle cx="12" cy="12" r="3.5"/></svg>
+        <span style="color: rgba(244,237,216,0.25); font-family: Cormorant SC, serif; font-size: 9px; letter-spacing: 0.44em; text-transform: uppercase;">Add Background Photo</span>
+      </div>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-heading">
+        <div class="contact-deepam" aria-hidden="true">
+          <svg viewBox="0 0 48 80" width="48" height="80" fill="none" aria-hidden="true">
+            <path d="M24 6 C22 12, 17 18, 19.5 26 C21 30, 27 30, 28.5 26 C31 18, 26 12, 24 6Z" fill="#C97A10" opacity="0.9"/>
+            <line x1="24" y1="27" x2="24" y2="36" stroke="#C09020" stroke-width="1.5"/>
+            <path d="M16 36 C14 44, 10 54, 7 62 L41 62 C38 54, 34 44, 32 36 Z" stroke="rgba(192,144,32,0.75)" stroke-width="1.2" stroke-linejoin="round"/>
+            <ellipse cx="24" cy="62" rx="18" ry="5" stroke="rgba(192,144,32,0.75)" stroke-width="1.2"/>
+            <ellipse cx="24" cy="67" rx="13" ry="3.5" stroke="rgba(192,144,32,0.55)" stroke-width="1"/>
+            <line x1="11" y1="70" x2="37" y2="70" stroke="rgba(192,144,32,0.4)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div>
+          <div class="section__num" style="color: rgba(192,144,32,0.8); border-top-color: rgba(192,144,32,0.5);">VII · Begin</div>
+          <h2 class="contact-title">Step into <em>the tradition.</em></h2>
+          <p class="contact-sub">New students are welcomed with a darśanam at the academy. Write or call to arrange a visit.</p>
+        </div>
+      </div>
+      <div class="contact-channels">
+        <dl class="contact-channel">
+          <dt>Call us</dt>
           <dd><a href="tel:+919014772912">+91 90147 72912</a></dd>
-        </div>
-        <div class="row">
-          <dt>Correspondence</dt>
+        </dl>
+        <dl class="contact-channel">
+          <dt>Write to us</dt>
           <dd><a href="mailto:gantiindumathi@gmail.com">gantiindumathi@gmail.com</a></dd>
-        </div>
-        <div class="row">
-          <dt>Tradition</dt>
-          <dd>Kuchipudi · in the paramparā of Sri Pandit Hemadri Chidambara Deekshitulu</dd>
-        </div>
-        <div class="row">
-          <dt>Founded</dt>
-          <dd>1994 · by Smt. G. Indumathi</dd>
-        </div>
-      </dl>
+        </dl>
+        <dl class="contact-channel">
+          <dt>Visit us</dt>
+          <dd>303 A Block, Shanti Gardens<br/>Raghavendra Nagar, Nacharam<br/>Hyderabad, Telangana</dd>
+        </dl>
+      </div>
     </div>
   </section>
 
@@ -363,6 +706,39 @@
     }, 2600);
   });
 
+  // Smooth scroll for all anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var href = a.getAttribute('href');
+      if (href === '#top' || href === '#') {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+      var target = document.querySelector(href);
+      if (!target) return;
+      e.preventDefault();
+      var topbarEl = document.querySelector('.topbar');
+      var offset = topbarEl ? topbarEl.offsetHeight + 32 : 32;
+      var top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    });
+  });
+
+  // Gallery carousel navigation
+  document.querySelectorAll('.gallery-nav__btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var stripId = btn.dataset.strip;
+      var strip = document.getElementById(stripId);
+      if (!strip) return;
+      var frame = strip.querySelector('.gallery-frame');
+      if (!frame) return;
+      var step = (frame.offsetWidth + 16) * 2;
+      var dir = parseInt(btn.dataset.dir, 10);
+      strip.scrollBy({ left: dir * step, behavior: 'smooth' });
+    });
+  });
+
   // Reveal on scroll
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
@@ -371,16 +747,16 @@
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
 
   // Observe sections and key elements
   document.querySelectorAll(
-    '.section, .sloka, .academy, .lineage__guru, .stage-item, .award, .rep__item, .factcard, .pullquote'
+    '.section, .sloka, .academy-part, .perf-card, .branch-card, .lineage__guru, .stage-item, .award, .rep__item, .factcard, .pullquote, .gallery-section'
   ).forEach(function (el) {
     el.classList.add('reveal');
     io.observe(el);
   });
-  // Hero elements are pre-marked reveal — observe them too
+  // Hero elements are pre-marked reveal
   document.querySelectorAll('.hero .reveal').forEach(function (el) {
     io.observe(el);
   });
@@ -420,7 +796,7 @@
     io.observe(li);
   });
 
-  // Repertoire — ballets
+  // Repertoire: ballets
   var ballHost = document.getElementById('rep-ballets');
   D.repertoire.ballets.forEach(function (b) {
     var div = document.createElement('div');
@@ -430,7 +806,7 @@
     io.observe(div);
   });
 
-  // Repertoire — solo mārgam
+  // Repertoire: solo mārgam
   var soloHost = document.getElementById('rep-solo');
   D.repertoire.solo.forEach(function (b) {
     var div = document.createElement('div');
